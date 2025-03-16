@@ -1,12 +1,12 @@
 //Array Search pgm
-const arr1 =[10,100,100,200,500,50,400,300];
-function ArrSch(arrVal){
+
+function ArrSch(arrVal,arrSrc){
     for(let i=0;i<arr1.length;i++){
 
-        if(arr1[i]==arrVal){
+        if(arrVal[i]==arrSrc){
             console.log("Entered item exist at postion ",Number(i)+1);
             break;
         }
     }
 }
-ArrSch(300);
+ArrSch([10,20,30,40,50,],40);
