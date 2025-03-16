@@ -23,3 +23,5 @@ function funSort(arr1){
 const SorArray=funSort(arrVal);
 
 console.log("After Sorting Array ",SorArray);
+
+console.log("Largest No Of Array Is ",SorArray[SorArray.length-1]);
