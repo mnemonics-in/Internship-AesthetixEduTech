@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#btn1,#btn2,h1{
+    height:100px;
+    margin-left: 400px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+    <button id="btn1">+</button>
+    <h1 id="head1">10</h1>
+    <button id="btn2">-</button>
+
+
+    <script>
+        document.getElementById("btn1").addEventListener("click",fun1);
+        document.getElementById("btn2").addEventListener("click",fun2);
+        function fun1(){
+            var var1=document.getElementById("head1").innerHTML;
+            var var2=Number(var1)+1;
+            document.getElementById("head1").innerHTML=var2;
+
+        }
+        function fun2(){
+            var var1=document.getElementById("head1").innerHTML;
+            var var2=Number(var1)-1;
+            document.getElementById("head1").innerHTML=var2;
+        }
+
+    </script>
+    
+</body>
+</html>
