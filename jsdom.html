@@ -7,12 +7,19 @@
 </head>
 <body>
 
-    <h1 class="headclass"></h1>
+    <h1 class="headclass" id="headid"></h1>
+    <h2 class="headclass" ></h2>
     
 
     <script>
 
-        document.getElementsByClassName("headclass").innerHTML="Welcome";
+        document.getElementById("headid").innerHTML="Hello";
+        let var1=document.getElementsByClassName("headclass");
+        for(let i=0;i<var1.length;i++){
+            var1[i].innerHTML="Welcome to my website";
+        }
+
+
     </script>
 </body>
 </html>
